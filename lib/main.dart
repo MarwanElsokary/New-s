@@ -7,14 +7,21 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-appBar: AppBar( title:  Text("kosmk",style: TextStyle(fontSize: 30),),
-
-),
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("kosmk 100 mar3", style: TextStyle(fontSize: 30)),
+        ),
+        body: Center(
+          child: Text(
+            'Hello, Flutter!',
+            style: TextStyle(fontSize: 24),
+          ),
+        ),
+      ),
     );
   }
 }
